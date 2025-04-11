@@ -37,6 +37,7 @@ body {
 }
 a{
   color: var(--text-primary);
+  text-decoration: none;
 }
 
 body::before {
@@ -284,7 +285,6 @@ body::before {
   height: 35px;
   display: flex;
   align-items: center;
-  text-decoration: none !important;
   justify-content: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -312,7 +312,6 @@ body::before {
 .social-link {
   display: inline-flex;
   align-items: center;
-  text-decoration: none;
   justify-content: center;
   width: 40px;
   height: 40px;
