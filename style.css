@@ -284,7 +284,7 @@ body::before {
   height: 35px;
   display: flex;
   align-items: center;
-  text-decoration: none;
+  text-decoration: none !important;
   justify-content: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
