@@ -1,4 +1,4 @@
-// Initialize AOS (Animate On Scroll)
+
 AOS.init({
   duration: 800,
   easing: 'ease-in-out',
@@ -6,18 +6,15 @@ AOS.init({
   offset: 100
 });
 
-// Theme Toggle
 document.addEventListener('DOMContentLoaded', function() {
   const themeToggle = document.getElementById('themeToggle');
   const toggleCircle = document.getElementById('toggleCircle');
   const htmlElement = document.documentElement;
   
-  // Load saved theme
   const savedTheme = localStorage.getItem('theme') || 'dark';
   htmlElement.setAttribute('data-theme', savedTheme);
   updateToggleIcon(savedTheme);
   
-  // Toggle theme on click
   themeToggle.addEventListener('click', function() {
     const currentTheme = htmlElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -38,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
@@ -53,7 +49,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         behavior: 'smooth'
       });
       
-      // Close mobile menu if open
       const navCollapse = document.querySelector('.navbar-collapse');
       if (navCollapse.classList.contains('show')) {
         document.querySelector('.navbar-toggler').click();
@@ -62,7 +57,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Navbar shrink on scroll
 window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.custom-navbar');
   if (window.scrollY > 50) {
@@ -78,18 +72,15 @@ window.addEventListener('scroll', () => {
 document.querySelectorAll('[href*="play.google.com"]').forEach(link => {
   link.addEventListener('click', function() {
     console.log('Play Store link clicked');
-    // You can add analytics tracking here
   });
 });
 
 document.querySelectorAll('[href*=".apk"]').forEach(link => {
   link.addEventListener('click', function() {
     console.log('APK download initiated');
-    // You can add analytics tracking here
   });
 });
 
-// Add scroll reveal animation for hero
 window.addEventListener('scroll', () => {
   const hero = document.querySelector('.hero');
   const scrollPercent = window.scrollY / window.innerHeight;
