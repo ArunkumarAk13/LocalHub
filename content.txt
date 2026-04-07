@@ -1,0 +1,176 @@
+============================================================
+  LocalHub - Website Content Extract
+============================================================
+
+PAGE TITLE: LocalHub - Buy & Sell Locally with Trust
+META DESCRIPTION: LocalHub - Connect with local shopkeepers. Buy, Sell, Trust.
+
+------------------------------------------------------------
+NAVIGATION LINKS
+------------------------------------------------------------
+- How It Works       → #how-it-works
+- Features           → #features
+- Download           → #download
+- Team               → #team
+
+------------------------------------------------------------
+HERO SECTION
+------------------------------------------------------------
+Heading: Connect Locally, Trade Globally
+Subtext: Buy and sell from trusted neighbors in your community. No middlemen. Pure trust.
+
+Download Link:
+  - Download APK → https://play.google.com/store/apps/details?id=com.localhub.app&hl=en_SG
+
+------------------------------------------------------------
+HOW IT WORKS
+------------------------------------------------------------
+Badge: How It Works
+Section Title: Simple Steps to Success
+
+Step 01 - Create Profile
+  Sign up instantly with email. No lengthy forms required.
+
+Step 02 - Get Notifications
+  Real-time alerts for items matching your interests.
+
+Step 03 - Connect & Chat
+  Message directly and negotiate deals in real-time.
+
+Step 04 - Build Trust
+  Earn ratings and badges as a trusted seller.
+
+------------------------------------------------------------
+TRUST & SAFETY
+------------------------------------------------------------
+Badge: Trust & Safety
+Section Title: Built on Trust, Secured by You
+
+Highly Trusted Badge:
+  - 4.5+ star rating
+  - 100+ successful sales
+  - Verified KYC documents
+
+Anti-Scam Protection:
+  - Public profiles with ratings
+  - Scam reports block accounts
+  - Permanent review history
+
+------------------------------------------------------------
+FEATURES
+------------------------------------------------------------
+Badge: Features
+Section Title: Powerful Tools for Trading
+
+1. Smart Notifications
+   Only alerts that matter. Filter by category effortlessly.
+
+2. Seller for Everyone
+   Be your own boss without capital investment.
+
+3. Advanced Filters
+   Find what you need with powerful search options.
+
+4. Mobile First
+   Optimized for smartphones for seamless trading.
+
+5. Real-Time Updates
+   Live notifications for posts and responses.
+
+6. Community Driven
+   Real reviews and transparent ratings from neighbors.
+
+------------------------------------------------------------
+DOWNLOAD SECTION
+------------------------------------------------------------
+Section Title: Download LocalHub
+Subtext: Join thousands buying and selling locally.
+
+Google Play Store:
+  Official store with updates and support
+  Link → https://play.google.com/store/apps/details?id=com.localhub.app&hl=en_SG
+
+Stats:
+  Downloads: 10
+  Rating: 3.5★
+  Active Users: 10
+
+------------------------------------------------------------
+TEAM SECTION
+------------------------------------------------------------
+Badge: Our Team
+Section Title: Meet the Creators
+
+1. Arun Kumar S
+   Role: Lead Developer
+   College: SNS College of Engineering
+   Email: arunkumar132004@gmail.com
+   Instagram: https://www.instagram.com/iam_._ak_._/?__pwa=1
+   LinkedIn: https://www.linkedin.com/in/arun-kumar-s-snsinstitutions/
+   WhatsApp: https://wa.me/919498821183
+
+2. Delvin M
+   Role: Backend Engineer
+   College: SNS College of Engineering
+   Email: delvinm2k3@gmail.com
+   Instagram: https://www.instagram.com/d_lv_n?igsh=MXd4NWc0eXk3bmx0OA==
+   LinkedIn: https://www.linkedin.com/in/delvin-m-sns/
+   WhatsApp: https://wa.me/917373139190
+
+3. Harinesh J
+   Role: UI/UX Designer
+   College: SNS College of Engineering
+   Email: harineshj28@gmail.com
+   Instagram: https://www.instagram.com/hari_xx_34_?igsh=MTdwd3VrdnlpMGtpMg==
+   LinkedIn: https://www.linkedin.com/in/harineshj-sns/
+   WhatsApp: https://wa.me/919952735589
+
+4. Efrin Maxwell F
+   Role: Product Manager
+   College: SNS College of Engineering
+   Email: efrin@gmail.com
+
+------------------------------------------------------------
+CTA SECTION
+------------------------------------------------------------
+Heading: Ready to Start Trading?
+Subtext: Join the LocalHub community today
+Link: Get on Play Store → https://play.google.com/store/apps/details?id=com.localhub.app&hl=en_SG
+
+------------------------------------------------------------
+FOOTER
+------------------------------------------------------------
+About: LocalHub — Connecting people to local shopkeepers.
+
+Quick Links:
+  - How It Works → #how-it-works
+  - Features     → #features
+  - Download     → #download
+  - Team         → #team
+
+Social Media:
+  - Facebook  → https://www.facebook.com/localhub
+  - Instagram → https://www.instagram.com/localhubapp
+  - Twitter   → https://twitter.com/localhubapp
+  - LinkedIn  → https://www.linkedin.com/company/localhub
+
+Copyright: © 2025 LocalHub. All rights reserved.
+
+------------------------------------------------------------
+EXTERNAL RESOURCE LINKS (CSS/JS)
+------------------------------------------------------------
+- https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+- https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap
+- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css
+- https://unpkg.com/aos@next/dist/aos.css
+- https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+- https://unpkg.com/aos@next/dist/aos.js
+
+LOCAL ASSETS:
+- style.css
+- script.js
+- images/logo.jpg
+- images/login-page.webp
+- images/arun.jpg
+- images/delvin.jpg
+- images/hari.jpg
