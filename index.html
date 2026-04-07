@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalHub — Buy &amp; Sell Locally with Trust</title>
+  <meta name="description" content="LocalHub - Connect with local shopkeepers. Buy, Sell, Trust.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cur-dot" id="curDot"></div>
+  <div class="cur-ring" id="curRing"></div>
+
+  <!-- ─── NAVBAR ──────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <img src="images/logo.jpg" alt="LocalHub Logo">
+        <span>LocalHub</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+      <a href="https://play.google.com/store/apps/details?id=com.localhub.app&hl=en_SG" target="_blank" class="nav-cta">
+        <i class="fab fa-google-play"></i> Get App
+      </a>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mob-nav" id="mobNav">
+      <a href="#how-it-works">How It Works</a>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="#team">Team</a>
+      <a href="https://play.google.com/store/apps/details?id=com.localhub.app&hl=en_SG" target="_blank" class="mob-cta">
+        <i class="fab fa-google-play"></i> Get App on Play Store
+      </a>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────── -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge reveal">
+          <span class="ping"></span>
+          Now on Google Play Store
+        </div>
+        <h1 class="reveal">
+          Connect <span class="grad">Locally,</span><br>
+          Trade <span class="grad">Safely</span>
+        </h1>
+        <p class="hero-sub reveal">
+          Buy and sell from trusted neighbors in your community.<br>
+          No middlemen. Pure trust.
+        </p>
+        <div class="hero-btns reveal">
+          <a href="https://play.google.com/store/apps/details?id=com.localhub.app&hl=en_SG" target="_blank" class="btn-glow">
+            <i class="fab fa-google-play"></i>
+            <span><small>Get it on</small><strong>Google Play</strong></span>
+          </a>
+          <a href="#how-it-works" class="btn-ghost">
+            How It Works <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="hstat">
+            <b data-count="500">0</b><em>+</em>
+            <small>Users</small>
+          </div>
+          <div class="hstat-div"></div>
+          <div class="hstat">
+            <b data-count="4.5" data-dec="1">0</b><em>★</em>
+            <small>Rating</small>
+          </div>
+          <div class="hstat-div"></div>
+          <div class="hstat">
+            <b data-count="100">0</b><em>+</em>
+            <small>Trades</small>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right reveal">
+        <div class="phone-scene">
+          <div class="phone-body">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <img src="images/login-page.webp" alt="LocalHub App">
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+          <div class="phone-ring r1"></div>
+          <div class="phone-ring r2"></div>
+          <div class="ftag ftag-1"><i class="fas fa-shield-alt"></i> KYC Verified</div>
+          <div class="ftag ftag-2"><i class="fas fa-bolt"></i> Instant Chat</div>
+          <div class="ftag ftag-3"><i class="fas fa-star"></i> 4.5 Rating</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-ball"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── HOW IT WORKS ─────────────────────────── -->
+  <section class="section hiw" id="how-it-works">
+    <div class="container">
+      <div class="sec-badge reveal"><i class="fas fa-route"></i> How It Works</div>
+      <h2 class="sec-title reveal">Simple Steps to <span class="grad">Success</span></h2>
+      <p class="sec-sub reveal">Get started in minutes and join your local trading community</p>
+      <div class="steps-row">
+        <div class="step-card reveal" data-delay="0">
+          <div class="step-no">01</div>
+          <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+          <h3>Create Profile</h3>
+          <p>Sign up instantly with email. No lengthy forms required.</p>
+        </div>
+        <div class="step-arr reveal"><i class="fas fa-arrow-right"></i></div>
+        <div class="step-card reveal" data-delay="100">
+          <div class="step-no">02</div>
+          <div class="step-icon"><i class="fas fa-bell"></i></div>
+          <h3>Get Notifications</h3>
+          <p>Real-time alerts for items matching your interests.</p>
+        </div>
+        <div class="step-arr reveal"><i class="fas fa-arrow-right"></i></div>
+        <div class="step-card reveal" data-delay="200">
+          <div class="step-no">03</div>
+          <div class="step-icon"><i class="fas fa-comments"></i></div>
+          <h3>Connect &amp; Chat</h3>
+          <p>Message directly and negotiate deals in real-time.</p>
+        </div>
+        <div class="step-arr reveal"><i class="fas fa-arrow-right"></i></div>
+        <div class="step-card reveal" data-delay="300">
+          <div class="step-no">04</div>
+          <div class="step-icon"><i class="fas fa-star"></i></div>
+          <h3>Build Trust</h3>
+          <p>Earn ratings and badges as a trusted seller.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURES ─────────────────────────────── -->
+  <section class="section feats" id="features">
+    <div class="container">
+      <div class="sec-badge reveal"><i class="fas fa-bolt"></i> Features</div>
+      <h2 class="sec-title reveal">Powerful Tools for <span class="grad">Trading</span></h2>
+      <p class="sec-sub reveal">Everything you need for seamless local commerce</p>
+      <div class="bento animatable">
+        <div class="b-card b-lg reveal">
+          <div class="b-icon"><i class="fas fa-bell"></i></div>
+          <h3>Smart Notifications</h3>
+          <p>Only alerts that matter. Filter by category effortlessly.</p>
+          <div class="notif-demo">
+            <div class="notif-row nr1"><i class="fas fa-tag"></i><span>iPhone 14 listed nearby</span><time>2m ago</time></div>
+            <div class="notif-row nr2"><i class="fas fa-store"></i><span>Fresh vegetables available</span><time>5m ago</time></div>
+            <div class="notif-row nr3"><i class="fas fa-bicycle"></i><span>Bike for sale — 500m away</span><time>12m ago</time></div>
+          </div>
+        </div>
+        <div class="b-card b-md reveal">
+          <div class="b-icon"><i class="fas fa-store"></i></div>
+          <h3>Seller for Everyone</h3>
+          <p>Be your own boss without any capital investment.</p>
+          <div class="tag-row">
+            <span class="ftag-sm">Zero Setup</span>
+            <span class="ftag-sm">Free Listing</span>
+            <span class="ftag-sm">Instant Publish</span>
+          </div>
+        </div>
+        <div class="b-card b-md reveal">
+          <div class="b-icon"><i class="fas fa-sliders"></i></div>
+          <h3>Advanced Filters</h3>
+          <p>Find exactly what you need with powerful search.</p>
+          <div class="chip-row">
+            <span class="chip active">Electronics</span>
+            <span class="chip">Furniture</span>
+            <span class="chip">Clothing</span>
+            <span class="chip">Food</span>
+          </div>
+        </div>
+        <div class="b-card b-sm reveal">
+          <div class="b-icon sm"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Mobile First</h3>
+          <p>Optimized for smartphones.</p>
+        </div>
+        <div class="b-card b-sm reveal">
+          <div class="b-icon sm"><i class="fas fa-bolt"></i></div>
+          <h3>Real-Time</h3>
+          <p>Live notifications &amp; responses.</p>
+        </div>
+        <div class="b-card b-full reveal">
+          <div class="b-icon"><i class="fas fa-users"></i></div>
+          <h3>Community Driven</h3>
+          <p>Real reviews and transparent ratings from neighbors. Build genuine trust in your local market.</p>
+          <div class="av-row">
+            <div class="av-stack">
+              <img src="images/arun.jpg" alt="Arun">
+              <img src="images/delvin.jpg" alt="Delvin">
+              <img src="images/hari.jpg" alt="Hari">
+              <div class="av-plus">+97</div>
+            </div>
+            <span>100+ trusted traders in your area</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TRUST & SAFETY ───────────────────────── -->
+  <section class="section trust" id="trust">
+    <div class="container">
+      <div class="sec-badge reveal"><i class="fas fa-shield-halved"></i> Trust &amp; Safety</div>
+      <h2 class="sec-title reveal">Built on <span class="grad">Trust</span>, Secured by You</h2>
+      <div class="trust-grid">
+        <div class="tr-card tr-gold reveal">
+          <div class="tr-seal">
+            <i class="fas fa-certificate"></i>
+            <span>Highly Trusted</span>
+          </div>
+          <ul class="tr-list">
+            <li><i class="fas fa-star"></i> 4.5+ star rating</li>
+            <li><i class="fas fa-check-circle"></i> 100+ successful sales</li>
+            <li><i class="fas fa-id-card"></i> Verified KYC documents</li>
+          </ul>
+        </div>
+        <div class="tr-card reveal">
+          <div class="tr-icon-wrap"><i class="fas fa-user-shield"></i></div>
+          <h3>Anti-Scam Protection</h3>
+          <ul class="tr-list">
+            <li><i class="fas fa-eye"></i> Public profiles with ratings</li>
+            <li><i class="fas fa-ban"></i> Scam reports block accounts</li>
+            <li><i class="fas fa-clock-rotate-left"></i> Permanent review history</li>
+          </ul>
+        </div>
+        <div class="tr-card reveal">
+          <h3>Verification Flow</h3>
+          <div class="flow">
+            <div class="fl done"><i class="fas fa-check"></i><span>ID Verified</span></div>
+            <div class="fl-arr"><i class="fas fa-chevron-right"></i></div>
+            <div class="fl done"><i class="fas fa-check"></i><span>Profile Live</span></div>
+            <div class="fl-arr"><i class="fas fa-chevron-right"></i></div>
+            <div class="fl active"><i class="fas fa-handshake"></i><span>Trade Safe</span></div>
+          </div>
+          <p>Every user passes KYC verification ensuring a safe trading environment for all.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DOWNLOAD ─────────────────────────────── -->
+  <section class="section download" id="download">
+    <canvas id="dlCanvas"></canvas>
+    <div class="container">
+      <div class="dl-grid">
+        <div class="dl-left">
+          <div class="sec-badge reveal"><i class="fas fa-download"></i> Download</div>
+          <h2 class="sec-title reveal">Get <span class="grad">LocalHub</span> Free</h2>
+          <p class="sec-sub reveal">Join thousands buying and selling locally.<br>Available on Google Play Store.</p>
+          <div class="dl-stats reveal">
+            <div class="dls"><b data-count="10">0</b><span>Downloads</span></div>
+            <div class="dls"><b data-count="3.5" data-dec="1">0</b><em>★</em><span>Rating</span></div>
+            <div class="dls"><b data-count="10">0</b><span>Active Users</span></div>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.localhub.app&hl=en_SG" target="_blank" class="play-btn reveal">
+            <i class="fab fa-google-play"></i>
+            <div><small>Get it on</small><strong>Google Play</strong></div>
+          </a>
+          <p class="dl-hint reveal"><i class="fas fa-magnifying-glass"></i> Search "LocalHub" on Play Store</p>
+        </div>
+        <div class="dl-right reveal">
+          <div class="dl-phone-wrap">
+            <div class="dl-phone-frame">
+              <img src="images/login-page.webp" alt="LocalHub App Screenshot">
+            </div>
+            <div class="dl-float df1"><i class="fas fa-shield-alt"></i> Verified Safe</div>
+            <div class="dl-float df2"><i class="fas fa-star"></i> 3.5 Stars</div>
+            <div class="dl-float df3"><i class="fab fa-google-play"></i> Free</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TEAM ─────────────────────────────────── -->
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="sec-badge reveal"><i class="fas fa-users"></i> Our Team</div>
+      <h2 class="sec-title reveal">Meet the <span class="grad">Creators</span></h2>
+      <p class="sec-sub reveal">The passionate team behind LocalHub from SNS College of Engineering</p>
+      <div class="team-grid">
+        <div class="tm-card reveal" data-delay="0">
+          <div class="tm-glow"></div>
+          <div class="tm-avatar"><img src="images/arun.jpg" alt="Arun Kumar S"><div class="tm-ring"></div></div>
+          <h3>Arun Kumar S</h3>
+          <span class="tm-role">Lead Developer</span>
+          <div class="tm-links">
+            <a href="mailto:arunkumar132004@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/iam_._ak_._/?__pwa=1" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/arun-kumar-s-snsinstitutions/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/919498821183" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="tm-card reveal" data-delay="100">
+          <div class="tm-glow"></div>
+          <div class="tm-avatar"><img src="images/delvin.jpg" alt="Delvin M"><div class="tm-ring"></div></div>
+          <h3>Delvin M</h3>
+          <span class="tm-role">Backend Engineer</span>
+          <div class="tm-links">
+            <a href="mailto:delvinm2k3@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/d_lv_n?igsh=MXd4NWc0eXk3bmx0OA==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/delvin-m-sns/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/917373139190" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="tm-card reveal" data-delay="200">
+          <div class="tm-glow"></div>
+          <div class="tm-avatar"><img src="images/hari.jpg" alt="Harinesh J"><div class="tm-ring"></div></div>
+          <h3>Harinesh J</h3>
+          <span class="tm-role">UI/UX Designer</span>
+          <div class="tm-links">
+            <a href="mailto:harineshj28@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/hari_xx_34_?igsh=MTdwd3VrdnlpMGtpMg==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/harineshj-sns/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/919952735589" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="tm-card reveal" data-delay="300">
+          <div class="tm-glow"></div>
+          <div class="tm-avatar tm-init"><span>EF</span><div class="tm-ring"></div></div>
+          <h3>Efrin Maxwell F</h3>
+          <span class="tm-role">Product Manager</span>
+          <div class="tm-links">
+            <a href="mailto:efrin@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA ──────────────────────────────────── -->
+  <section class="cta-sec">
+    <div class="cta-bg"></div>
+    <div class="container">
+      <h2 class="reveal">Ready to Start <span class="grad">Trading?</span></h2>
+      <p class="reveal">Join the LocalHub community and connect with trusted sellers nearby.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.localhub.app&hl=en_SG" target="_blank" class="btn-glow btn-xl reveal">
+        <i class="fab fa-google-play"></i>
+        <span><small>Get it on</small><strong>Google Play</strong></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="ft-brand">
+        <a href="#" class="logo">
+          <img src="images/logo.jpg" alt="LocalHub">
+          <span>LocalHub</span>
+        </a>
+        <p>Connecting people to local shopkeepers.<br>Buy, Sell, Trust.</p>
+        <div class="ft-social">
+          <a href="https://www.facebook.com/localhub" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/localhubapp" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/localhubapp" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/localhub" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="ft-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="#team">Our Team</a></li>
+        </ul>
+      </div>
+      <div class="ft-get">
+        <h4>Get the App</h4>
+        <a href="https://play.google.com/store/apps/details?id=com.localhub.app&hl=en_SG" target="_blank" class="ft-play">
+          <i class="fab fa-google-play"></i> Google Play
+        </a>
+        <p>Free to download. Free to trade.</p>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <p>© 2025 LocalHub. All rights reserved.</p>
+      <p>Made with <i class="fas fa-heart"></i> by Team LocalHub</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
