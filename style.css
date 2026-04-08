@@ -303,21 +303,59 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
   padding-top: var(--nav-h);
 }
-#heroCanvas {
+.hero-bg {
   position: absolute;
   inset: 0;
-  width: 100%; height: 100%;
   z-index: 0;
+  overflow: hidden;
+}
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  will-change: transform;
+  pointer-events: none;
+}
+.orb-1 {
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(124,110,255,0.16) 0%, transparent 70%);
+  top: -220px; left: -180px;
+  animation: orbDrift1 22s ease-in-out infinite alternate;
+}
+.orb-2 {
+  width: 520px; height: 520px;
+  background: radial-gradient(circle, rgba(0,212,255,0.09) 0%, transparent 70%);
+  top: 5%; right: -120px;
+  animation: orbDrift2 28s ease-in-out infinite alternate;
+}
+.orb-3 {
+  width: 420px; height: 420px;
+  background: radial-gradient(circle, rgba(255,107,53,0.07) 0%, transparent 70%);
+  bottom: -60px; left: 38%;
+  animation: orbDrift3 20s ease-in-out infinite alternate;
+}
+@keyframes orbDrift1 {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(70px, 55px); }
+}
+@keyframes orbDrift2 {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-55px, 45px); }
+}
+@keyframes orbDrift3 {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-45px, -40px); }
 }
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 65% 70% at 60% 45%, rgba(124,110,255,0.16) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 50% at 15% 75%, rgba(255,107,53,0.09) 0%, transparent 55%),
-    radial-gradient(ellipse 35% 40% at 85% 15%, rgba(0,212,255,0.07) 0%, transparent 50%);
+  background-image:
+    linear-gradient(rgba(124,110,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124,110,255,0.035) 1px, transparent 1px);
+  background-size: 55px 55px;
   z-index: 1;
+  pointer-events: none;
 }
 .hero-content {
   position: relative;
@@ -832,13 +870,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 50% 60% at 80% 50%, rgba(124,110,255,0.1) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(0,212,255,0.06) 0%, transparent 55%);
+    radial-gradient(ellipse 55% 65% at 85% 50%, rgba(124,110,255,0.13) 0%, transparent 65%),
+    radial-gradient(ellipse 45% 45% at 15% 75%, rgba(0,212,255,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 40% at 50% 10%, rgba(124,110,255,0.07) 0%, transparent 55%);
   pointer-events: none;
 }
-#dlCanvas {
+.download::after {
+  content: '';
   position: absolute;
-  inset: 0; width: 100%; height: 100%;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(124,110,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124,110,255,0.025) 1px, transparent 1px);
+  background-size: 55px 55px;
   pointer-events: none;
   z-index: 0;
 }
